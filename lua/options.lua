@@ -41,3 +41,6 @@ vim.o.termguicolors = true
 
 -- Center the cursor in the middle of the screen when scrolling
 vim.o.scrolloff = 999
+
+-- Highlight the line that the cursor is on
+vim.o.cursorline = true

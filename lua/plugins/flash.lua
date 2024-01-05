@@ -1,6 +1,9 @@
 return {
     "folke/flash.nvim",
     event = "VeryLazy",
+    config = function()
+        require('flash').toggle(false)
+    end,
     ---@type Flash.Config
     opts = {},
     -- stylua: ignore
