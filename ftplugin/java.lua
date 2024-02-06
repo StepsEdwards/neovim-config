@@ -19,9 +19,9 @@ local config = {
 	cmd = {
 
 		-- 💀
-		-- 'java', -- or '/path/to/java17_or_newer/bin/java'
+		'java', -- or '/path/to/java17_or_newer/bin/java'
 		-- depends on if `java` is in your $PATH env variable and if it points to the right version.
-		'/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java', -- java19 doesn't appear to work with java-debug
+		-- '/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java', -- java19 doesn't appear to work with java-debug
 		-- '/Library/Java/JavaVirtualMachines/temurin-19.jdk/Contents/Home/bin/java',
 
 		'-Declipse.application=org.eclipse.jdt.ls.core.id1',

@@ -119,6 +119,8 @@ function M.remove_empty_string_values_from_table(table_data)
     end
 end
 
+-- only trims whitespaces before the first character
+-- and after the last character
 function M.trim_string(string_value)
     return string.match(string_value, "^%s*(.-)%s*$")
 end

@@ -4,7 +4,4 @@ return {
     dependencies = {
         'godlygeek/tabular'
     },
-    config = function ()
-        print('hello from vim-markdown')
-    end
 }

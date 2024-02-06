@@ -19,8 +19,11 @@ file to be able to run the new `dev-env-datarouter-wrapper` script without a pas
 `stephensj       ALL = (ALL:ALL) NOPASSWD: /Users/stephensj/personal-dev-scripts/dev-env-datarouter-wrapper`
 so that I could execute that script before running the datarouter debug setup below. See the `DatarouterDebug` neovim command
 defined, currently, in `toggleterm.lua` for the actual steps taken to start debugging.
-- The `dev_env_datarouter` function cannot be setup be run with `sudo` becuase it is not a script/command, but rather a function that
+- The `dev_env_datarouter` function cannot be setup be run with `sudo` becuase it is not a script/command, but rather a global function that
 is defined/registered when zillow-bootstrap is initialized/sourced at the beginning of each terminal session.
+- In order to be able to login to the tomcat manager gui to be able to deploy/undeploy apps with the datarouter tomcat configuration, I compared
+the server.xml file with a default tomcat install server.xml and added the missing pieces for user management and login. Then you can update
+the tomcat-users.xml file with users and roles to access the tomcat manager.
 
 1. start tomcat in debug mode to listen for remote debugging connections on the debug port (default: 8080)
 ```bash
